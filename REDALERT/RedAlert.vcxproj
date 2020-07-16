@@ -459,8 +459,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ABSTRACT.H" />
+    <ClInclude Include="Action.h" />
     <ClInclude Include="AIRCRAFT.H" />
     <ClInclude Include="ANIM.H" />
+    <ClInclude Include="API.h" />
     <ClInclude Include="AUDIO.H" />
     <ClInclude Include="B64PIPE.H" />
     <ClInclude Include="B64STRAW.H" />
@@ -540,6 +542,7 @@
     <ClInclude Include="GADGET.H" />
     <ClInclude Include="GAMEDLG.H" />
     <ClInclude Include="GAUGE.H" />
+    <ClInclude Include="GoalPlanner.h" />
     <ClInclude Include="GOPTIONS.H" />
     <ClInclude Include="GSCREEN.H" />
     <ClInclude Include="HEAP.H" />
@@ -611,6 +614,7 @@
     <ClInclude Include="PK.H" />
     <ClInclude Include="PKPIPE.H" />
     <ClInclude Include="PKSTRAW.H" />
+    <ClInclude Include="Plan.h" />
     <ClInclude Include="POWER.H" />
     <ClInclude Include="QUEUE.H" />
     <ClInclude Include="RADAR.H" />
@@ -624,6 +628,10 @@
     <ClInclude Include="REGION.H" />
     <ClInclude Include="Resource\resource.h" />
     <ClInclude Include="Resurgence.h" />
+    <ClInclude Include="ResurgenceActions.h" />
+    <ClInclude Include="ResurgenceGoals.h" />
+    <ClInclude Include="ResurgencePlanners.h" />
+    <ClInclude Include="ResurgencePlans.h" />
     <ClInclude Include="RGB.H" />
     <ClInclude Include="RNDSTRAW.H" />
     <ClInclude Include="RNG.H" />

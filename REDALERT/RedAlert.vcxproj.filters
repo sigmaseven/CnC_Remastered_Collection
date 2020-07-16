@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Resource">
       <UniqueIdentifier>{f4599de7-e877-410c-943f-afc4bef70eb6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resurgence">
+      <UniqueIdentifier>{0b4be9ac-20c5-4f72-afc7-90032c6a1fda}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AADATA.CPP">
@@ -901,7 +904,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Resurgence.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Resurgence</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1770,7 +1773,31 @@
       <Filter>Source Files\Resource</Filter>
     </ClInclude>
     <ClInclude Include="Resurgence.h">
-      <Filter>Header Files</Filter>
+      <Filter>Resurgence</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Resurgence</Filter>
+    </ClInclude>
+    <ClInclude Include="Plan.h">
+      <Filter>Resurgence</Filter>
+    </ClInclude>
+    <ClInclude Include="GoalPlanner.h">
+      <Filter>Resurgence</Filter>
+    </ClInclude>
+    <ClInclude Include="ResurgenceActions.h">
+      <Filter>Resurgence</Filter>
+    </ClInclude>
+    <ClInclude Include="ResurgencePlans.h">
+      <Filter>Resurgence</Filter>
+    </ClInclude>
+    <ClInclude Include="ResurgencePlanners.h">
+      <Filter>Resurgence</Filter>
+    </ClInclude>
+    <ClInclude Include="API.h">
+      <Filter>Resurgence</Filter>
+    </ClInclude>
+    <ClInclude Include="ResurgenceGoals.h">
+      <Filter>Resurgence</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
