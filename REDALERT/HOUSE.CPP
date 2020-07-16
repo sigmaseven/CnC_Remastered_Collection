@@ -138,6 +138,7 @@
 /*
 ** New sidebar for GlyphX multiplayer. ST - 8/7/2019 10:10AM
 */
+#include "Resurgence.h"
 #include "SidebarGlyphx.h"
 
 TFixedIHeapClass<HouseClass::BuildChoiceClass> HouseClass::BuildChoice;
@@ -1311,7 +1312,8 @@ void HouseClass::AI(void)
 		Do_All_To_Hunt();
 	}
 
-	AI_Building();
+	//AI_Building();
+	Resurgence::building_ai(this);
 	AI_Unit();
 	AI_Vessel();
 	AI_Infantry();
@@ -5981,7 +5983,8 @@ int HouseClass::AI_Unit(void)
 	**	A computer controlled house will try to build a replacement
 	**	harvester if possible.
 	*/
-	if (IQ >= Rule.IQHarvester && !IsTiberiumShort && !IsHuman && BQuantity[STRUCT_REFINERY] > UQuantity[UNIT_HARVESTER] && Difficulty != DIFF_HARD) {
+	//if (IQ >= Rule.IQHarvester && !IsTiberiumShort && !IsHuman && (BQuantity[STRUCT_REFINERY] * 3) > UQuantity[UNIT_HARVESTER] && Difficulty != DIFF_HARD) {
+	if(!IsTiberiumShort && !IsHuman && (BQuantity[STRUCT_REFINERY] * 2) > UQuantity[UNIT_HARVESTER]) {
 		if (UnitTypeClass::As_Reference(UNIT_HARVESTER).Level <= (unsigned)Control.TechLevel) {
 			BuildUnit = UNIT_HARVESTER;
 			return(TICKS_PER_SECOND);
